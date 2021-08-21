@@ -1,0 +1,35 @@
+.site__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    a{
+        color: #111;
+    }
+}
+@media screen and (min-width: 1000px){
+    .site__footer{
+        img{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    .site__footer{
+        justify-content: space-between;
+        span{
+            margin-left: -70px;
+        }
+    }
+}
+@media screen and (max-width: 744px){
+    .site__footer{
+        text-align: center;
+        flex-direction: column-reverse;
+        span,
+        abbr,
+        a{
+            margin-bottom: 30px;
+        }
+    }
+}
